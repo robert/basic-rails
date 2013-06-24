@@ -1,3 +1,3 @@
-BlogPact::Application.routes.draw do
+CanbanCodeReview::Application.routes.draw do
   devise_for :users
 end

@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-BlogPact::Application.load_tasks
+CanbanCodeReview::Application.load_tasks
