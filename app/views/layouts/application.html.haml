@@ -1,0 +1,27 @@
+%html
+  %head
+    %title Canban Code Review
+    = stylesheet_link_tag "application", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body{ style: "padding-top: 0px"}
+    .navbar.navbar-static-top
+      .navbar-inner
+        .container
+          %a.brand(href= root_path) Canban Code Review
+          %ul.nav.pull-right
+            - if user_signed_in?  
+              %li= link_to "Log out", destroy_user_session_path, method: :delete
+            - else
+              %li= link_to "Sign up", new_user_registration_path
+              %li= link_to "Log in", user_session_path
+    .container
+      .row 
+        - flash.each do |name, msg|
+          - if msg.is_a?(String)
+            %div{:class => "alert alert-#{name == :notice ? "success" : "error"}"}
+              %a.close{"data-dismiss" => "alert"} ×
+              = content_tag :div, msg, :id => "flash_#{name}"
+    .container
+      .row
+        = yield
