@@ -21,6 +21,8 @@ gem "roadie"
 gem "symbolize", :require => "symbolize/active_record"
 gem "colored"
 gem "better_logging"
+gem 'quiet_assets', :group => :development
+gem "dotenv-rails", :groups => [:development, :test]
 
 group :production do
   gem 'pg'
