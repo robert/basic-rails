@@ -32,7 +32,6 @@ GEM
     better_errors (1.1.0)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
-    better_logging (1.0.3)
     builder (3.1.4)
     cancan (1.6.10)
     capybara (2.2.1)
@@ -255,7 +254,6 @@ PLATFORMS
 
 DEPENDENCIES
   better_errors
-  better_logging
   cancan
   capybara
   capybara-webkit (~> 0.14.1)
