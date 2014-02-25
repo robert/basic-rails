@@ -44,7 +44,6 @@ group  :test do
   gem 'guard-rspec'
   gem 'guard-spork'
   gem "capybara"
-  gem "capybara-webkit", "~> 0.14.1"
   gem "database_cleaner"
   gem "fivemat"
 end

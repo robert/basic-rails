@@ -40,9 +40,6 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
-    capybara-webkit (0.14.2)
-      capybara (~> 2.0, >= 2.0.2)
-      json
     celluloid (0.15.2)
       timers (~> 1.1.0)
     childprocess (0.3.9)
@@ -256,7 +253,6 @@ DEPENDENCIES
   better_errors
   cancan
   capybara
-  capybara-webkit (~> 0.14.1)
   coffee-rails
   colored
   database_cleaner
